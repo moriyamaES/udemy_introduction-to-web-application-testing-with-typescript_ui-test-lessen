@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.app.json", // アプリケーションの基本設定を継承
+  "compilerOptions": {
+    "verbatimModuleSyntax": false // テスト時はESM構文を変換許可
+    // 必要に応じて、テスト特有の他のコンパイラオプションをここに追加できます
+    // 例: "esModuleInterop": true, // CommonJSモジュールとの相互運用性を高める
+  },
+  "include": [
+    // Jestがトランスパイルする対象ファイルを指定します
+    // 通常はテストファイルと、テスト対象のソースコードを含めます
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ]
+}
