@@ -21,7 +21,11 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    // 2行追加
+    "esModuleInterop": true,
+    "types": ["@testing-library/jest-dom"]
   },
   "include": ["src"]
 }
